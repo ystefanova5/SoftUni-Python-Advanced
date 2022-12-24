@@ -1,5 +1,5 @@
 text = list(input())
-reversed_text = []
+
 while len(text) > 0:
     print(text.pop(), end="")
 
