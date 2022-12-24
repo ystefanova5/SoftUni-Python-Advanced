@@ -1,6 +1,6 @@
 text = list(input())
 
-while len(text) > 0:
+while text:
     print(text.pop(), end="")
 
 
