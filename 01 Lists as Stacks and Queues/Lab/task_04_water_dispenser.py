@@ -39,4 +39,5 @@ print(f"{water_in_dispenser} liters left")
 #         o Otherwise, print "{person_name} must wait" and remove the person from the queue
 #           without reducing the water in the dispenser.
 #     - "refill {liters}" - add the given litters in the dispenser.
-# In the end, print how many liters of water have left in the format: "{left_liters} liters left".
+# In the end, print how many liters of water have left in the format: 
+# "{left_liters} liters left"
