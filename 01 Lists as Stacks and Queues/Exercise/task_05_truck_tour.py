@@ -24,8 +24,7 @@ for pump_index in range(pumps_count):
         print(pump_index)
         break
     else:
-        current_pump = pumps.popleft()
-        pumps.append(current_pump)
+        pumps.append(pumps.popleft())
 
 
 ################################################   Task Description   ################################################
