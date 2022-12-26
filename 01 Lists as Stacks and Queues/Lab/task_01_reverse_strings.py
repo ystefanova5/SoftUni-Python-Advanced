@@ -1,8 +1,6 @@
 text = list(input())
-reversed_text = []
-while len(text) > 0:
-    reversed_text.append(text.pop())
-print("".join(reversed_text))
+while text:
+    print(text.pop(), end="")
 
 
 ################################################   Task Description   ################################################
