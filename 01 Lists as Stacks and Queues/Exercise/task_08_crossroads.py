@@ -62,11 +62,11 @@ while True:
 #     • During the free window, cars will only exit the crossroads
 # Output
 #     • If a crash happens, end the program and print:
-# "A crash happened!"
-# "{car} was hit at {character_hit}."
+#       "A crash happened!"
+#       "{car} was hit at {character_hit}."
 #     • If everything goes smoothly and you receive an "END" command, print:
-# "Everyone is safe."
-# "{total_cars_passed} total cars passed the crossroads."
+#       "Everyone is safe."
+#       "{total_cars_passed} total cars passed the crossroads."
 # Constraints
 #     • The input will be within the constraints specified above and will always be valid. 
 #       There is no need to check it explicitly.
