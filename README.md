@@ -9,7 +9,7 @@ Course duration: 6 weeks<br>
 Course start: 10.01.2023<br>
 
 Course tutors:<br>
-  • Labs: [Mario Zahariev](https://www.linkedin.com/in/mario-zahariev-753a7b202/)<br>
+  • Labs: [Mario Zahariev](https://github.com/zahariev-webbersof)<br>
   • Exercises: 
 
 ### Course curriculum:
