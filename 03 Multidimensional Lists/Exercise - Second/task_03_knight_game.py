@@ -19,10 +19,6 @@ def possible_attacks(r, c):
     return result
 
 
-def initiate_attack():
-    pass
-
-
 size = int(input())
 matrix = []
 
