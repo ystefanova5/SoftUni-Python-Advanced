@@ -28,7 +28,6 @@ for _ in range(size):
 removed_knights = 0
 attacking_knight = []
 
-
 while True:
     max_attacks = 0
     for row in range(size):
