@@ -2,16 +2,9 @@ from collections import deque
 
 
 def calculate_honey(matched_bee, matched_nectar, operator):
-    if operator == "+":
-        return matched_bee + matched_nectar
-    elif operator == "-":
-        return matched_bee - matched_nectar
-    elif operator == "*":
-        return matched_bee * matched_nectar
-    elif operator == "/":
-        if matched_nectar > 0:
-            return matched_bee / matched_nectar
-        return 0
+    if matched_nectar > 0:
+        return eval(f"{matched_bee}{operator}{matched_nectar}")
+    return 0
 
 
 bees = deque(map(int, input().split()))
