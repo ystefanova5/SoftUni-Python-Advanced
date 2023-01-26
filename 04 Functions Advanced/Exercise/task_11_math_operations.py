@@ -1,29 +1,17 @@
 def math_operations(*args, **kwargs):
-    def add(number):
-        kwargs["a"] += number
-
-    def sub(number):
-        kwargs["s"] -= number
-
-    def div(number):
-        kwargs["d"] /= number
-
-    def mul(number):
-        kwargs["m"] *= number
-
     operations = ""
     steps = 0
-    for num in args:
+    for number in args:
         steps += 1
         if steps == 1:
-            add(num)
+            kwargs["a"] += number
         elif steps == 2:
-            sub(num)
+            kwargs["s"] -= number
         elif steps == 3:
-            if num != 0:
-                div(num)
+            if number != 0:
+                kwargs["d"] /= number
         elif steps == 4:
-            mul(num)
+            kwargs["m"] *= number
             steps = 0
 
     sorted_data = sorted(kwargs.items(), key=lambda x: (-x[1], x[0]))
