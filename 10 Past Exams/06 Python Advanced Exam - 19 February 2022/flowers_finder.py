@@ -25,7 +25,6 @@ while True:
             print(f"Word found: {key}")
             flower_found = True
 
-
 if not flower_found:
     print("Cannot find any word!")
 
