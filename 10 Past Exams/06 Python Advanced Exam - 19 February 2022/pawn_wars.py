@@ -52,6 +52,7 @@ while not pawn_captured and not pawn_promoted:
     else:
         b_row = b_row + 1
 
+# We get the position of the winning pawn, according to its coordinates
 rows = ["8", "7", "6", "5", "4", "3", "2", "1"]
 columns = ["a", "b", "c", "d", "e", "f", "g", "h"]
 position = columns[winner_col] + rows[winner_row]
