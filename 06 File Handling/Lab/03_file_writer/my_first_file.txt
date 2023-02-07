@@ -1,0 +1,6 @@
+This is my first line
+I just created a new file
+It allows us to write in a particular file
+This is how we can add multiple line
+We do it by adding the lines to a list
+And then use '.writelines()'
