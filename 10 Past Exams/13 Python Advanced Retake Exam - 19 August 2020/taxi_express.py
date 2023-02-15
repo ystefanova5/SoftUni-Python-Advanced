@@ -7,6 +7,7 @@ time_passed = 0
 while customers and taxis:
     customer = customers.popleft()
     taxi = taxis.pop()
+    
     if customer <= taxi:
         time_passed += customer
     else:
