@@ -10,7 +10,7 @@ Course start: 10.01.2023<br>
 
 Course tutors:<br>
   • Labs: [Mario Zahariev](https://github.com/zahariev-webbersof)<br>
-  • Exercises: 
+  • Exercises: [Diyan Kalaydzhiev](https://github.com/DiyanKalaydzhiev23)<br
 
 ### Course curriculum:
 1. Lists as Stacks and Queues<br>
