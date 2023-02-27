@@ -7,9 +7,23 @@ def even_odd_filter(**kwargs):
         else:
             result[key] = [x for x in kwargs[key] if x % 2 == 0]
 
-    sorted_result = dict(sorted(result.items(), key = lambda x: -len(x[1])))
+    return dict(sorted(result.items(), key = lambda x: -len(x[1])))
 
-    return sorted_result
+
+########### Solution using "filter" ###########
+# 
+# def even_odd_filter(**kwargs):
+#     numbers = {}
+# 
+#     if "even" in kwargs:
+#         match_even = list(filter(lambda x: x% 2 == 0, kwargs["even"]))
+#         numbers["even"] = match_even
+#
+#     if "odd" in kwargs:
+#         match_odd = list(filter(lambda x: x% 2 != 0, kwargs["odd"]))
+#         numbers["odd"] = match_odd
+# 
+#     return dict(sorted(numbers.items(), key = lambda x: -len(x[1])))
 
 
 ################################################   Task Description   ################################################
