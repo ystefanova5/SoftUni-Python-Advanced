@@ -1,19 +1,23 @@
-def func_executor(*args):
-    result = ""
-    
-    for func in args:
-        func_name, func_args = func
-        result += f"{func_name.__name__} - {func_name(*func_args)}\n"
-    
-    return result
+def even_odd_filter(**kwargs):
+    result = {}
+
+    for key in kwargs:
+        if key == "odd":
+            result[key] = [x for x in kwargs[key] if x % 2 != 0]
+        else:
+            result[key] = [x for x in kwargs[key] if x % 2 == 0]
+
+    sorted_result = dict(sorted(result.items(), key = lambda x: -len(x[1])))
+
+    return sorted_result
 
 
 ################################################   Task Description   ################################################
-# 6. Function Executor
-# Create a function called func_executor() that can receive a different number of tuples,
-# each of which will have exactly 2 elements: the first will be a function,
-# and the second will be a tuple of the arguments that need to be passed to that function.
-# You should execute each function and return its result in the format:
-# "{function name} - {function result}"
-# For more clarification, see the examples below.
+# 4. Numbers Filter
+# Create a function called even_odd_filter() that can receive a different number of named arguments.
+# The keys will be "even" and/or "odd", and the values will be a list of numbers.
+# When the key is "odd", you should extract only the odd numbers from its list.
+# When the key is "even", you should extract only the even numbers from its list.
+# The function should return a dictionary sorted by the length of the lists in descending order.
+# There will be no case of lists with the same length.
 # Submit only your function in the judge system.
